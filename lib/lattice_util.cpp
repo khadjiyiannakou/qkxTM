@@ -426,7 +426,7 @@ void ColorSpinorField::zero(){
 void ColorSpinorField::gaussianSmearing(qkxTMComplex **Psi_tmp, qkxTMComplex **Psi_sm, qkxTMComplex **gauge , LatticeInfo *latInfo)
 {
   int nsmear = latInfo->NsmearGauss;
-  int alpha = latInfo->alphaGauss;
+  double alpha = latInfo->alphaGauss;
   double normalize = 1./(1 + 6*alpha);
   int x[4] , fwd[4], bwd[4];
 
